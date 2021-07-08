@@ -1,15 +1,16 @@
 {
-  "name": "node-starter",
+  "name": "jest-practice",
   "version": "1.0.0",
   "engines": {
     "node": ">=14.0.0"
   },
-  "description": "Node Starter Repo",
+  "description": "Practicing Jest",
   "private": true,
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon --watch app"
+    "start": "nodemon app/index.js --watch app",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,8 @@
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-xo": "^0.37.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "jest": "^27.0.6",
     "nodemon": "^2.0.10",
     "prettier": "^2.3.2"
   }
