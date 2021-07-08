@@ -17,3 +17,11 @@ Then, run **two terminals** (make sure you are in the correct directory). One of
 Oh, your code goes in `app`. You and create an `index.test.js` (or similar pattern). That's probably the simplest for practicing.
 
 Also, this project uses ESModules (not CommonJS). Use `import` and `export` instead of `module.exports` and `require`.
+
+## Coding Fonts
+
+It may sound silly 🙃, but coding fonts do help when doing a lot of work on the screen (as well as theme). Here are the ones that I have set: `'Victor Mono', 'Inconsolata', 'Source Code Pro',`. You'd need to Google and install those on your 💻 to get them to work.
+
+## Icons
+
+I have set: `"workbench.iconTheme": "material-icon-theme",`. Google that and install it on your own if you like.
