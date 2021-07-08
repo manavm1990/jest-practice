@@ -1,44 +1,28 @@
-import axios from "axios";
-import { add, getUsers } from "./index.js";
+import { add, HourlyEmployee } from "./index.js";
 
-it("adds 1 + 2 to equal 3", () => {
-  expect(add(1, 2)).toBe(3);
+describe("Calc", () => {
+  it("adds 1 + 2 to equal 3", () => {
+    expect(add(1, 2)).toBe(3);
+  });
 });
 
-// In order to test this w/o making an actual request, we can use a mock.
-jest.mock("axios");
+describe("Employees", () => {
+  const employee = new HourlyEmployee({
+    first: "Mark",
+    last: "Zuckerberg",
+    position: "Clerk",
+    hourlyRate: "1000",
+  });
 
-describe("getUsers", () => {
-  it("gets users", () => {
-    const mockResponse = {
-      id: 1,
-      name: "Leanne Graham",
-      username: "Bret",
-      email: "Sincere@april.biz",
-      address: {
-        street: "Kulas Light",
-        suite: "Apt. 556",
-        city: "Gwenborough",
-        zipcode: "92998-3874",
-        geo: {
-          lat: "-37.3159",
-          lng: "81.1496",
-        },
-      },
-      phone: "1-770-736-8031 x56442",
-      website: "hildegard.org",
-      company: {
-        name: "Romaguera-Crona",
-        catchPhrase: "Multi-layered client-server neural-net",
-        bs: "harness real-time e-markets",
-      },
-    };
+  it("creates an Hourly Employee", () => {
+    expect(employee).toBeInstanceOf(HourlyEmployee);
+  });
 
-    axios.mockResolvedValue(mockResponse);
+  it("returns the correct full name of an Hourly Employee", () => {
+    expect(employee.fullName).toBe("Mark Zuckerberg");
+  });
 
-    // `toEqual` uses strict equality. Use it for objects (non-primitives).
-    return getUsers.then((response) =>
-      expect(response[0]).toEqual(mockResponse)
-    );
+  it("calculates the correct pay w/o specifying the hours", () => {
+    expect(employee.calculatePay()).toBe(40000);
   });
 });
