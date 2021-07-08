@@ -1,10 +1,5 @@
 {
   "better-comments.highlightPlainText": true,
-  "editor.codeActionsOnSave": {
-    "addMissingImports": true,
-    "source.fixAll": true,
-    "source.organizeImports": true
-  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Victor Mono', 'Inconsolata', 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
