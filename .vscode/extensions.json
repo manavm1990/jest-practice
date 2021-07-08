@@ -5,11 +5,9 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "mgmcdermott.vscode-language-babel",
+    "naumovs.theme-oceanicnext",
     "oderwat.indent-rainbow",
-    "pkief.material-icon-theme",
-    "equinusocio.vsc-material-theme",
     "stkb.rewrap",
-    "streetsidesoftware.code-spell-checker",
-    "visualstudioexptteam.vscodeintellicode"
+    "streetsidesoftware.code-spell-checker"
   ]
 }

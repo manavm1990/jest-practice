@@ -21,7 +21,7 @@
   "javascript.validate.enable": false,
   "prettier.requireConfig": true,
   "terminal.integrated.fontFamily": "'Inconsolata', 'Source Code Pro', monospace",
-  "workbench.colorTheme": "Material Theme",
+  "workbench.colorTheme": "Oceanic Next (dimmed bg)",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.view.alwaysShowHeaderActions": true
 }
