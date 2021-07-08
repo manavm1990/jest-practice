@@ -1,30 +1,25 @@
-# Node Starter
+# Jest Practice
 
-## TLDR
+This repo uses the Oceanic Next theme as part of the extensions/settings in `.vscode`. The reason why is b/c it plays nicely with the _Babel JavaScript_ extension's enhanced syntax highlighting.
 
-Use of this starter template assumes that you have a 'complete dev environment' setup - a terminal, Node, VS Code, at least. If not, you may want to [start here.](https://www.notion.so/codefinity/Setting-up-a-Local-Dev-Environment-for-JS-02a4e9f4a30043d3a8e7d109be3448f4)
+If you really hate it, no worries ;). Just change it, but you **might** lose some syntax highlighting benefits.
 
-1. Click that big green button to start using it.
-2. `clone` your new repo from your GitHub to your local computer
-3. `cd` into the `clone`d repo and enter: `npm i`.
-4. `npm start`
+On that note 🎵, **don't forget to** install any missing recommended extensions if prompted to do so in the bottom right of your screen (not the ones on the bottom left under 'Extensions!').
 
-## Some of What's Included
+If you want, you could install _Jest Snippets_ from [here](https://marketplace.visualstudio.com/items?itemName=andys8.jest-snippets).
 
-- [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-- Various VS Code 'settings' and 'extensions.' Look in the bottom right when you open this up in VS Code to install them.
+You will also want to make sure that _ESLint_ and _Prettier_ are enabled in the bottom right.
 
-## How To Use
+Aside from that, `npm i`. You also need to: `npm install --save-dev jest`.
 
-Run `npm i` to get all the things installed.
+You should also update `package.json` with your `"author"` info etc. and **add**:
 
-`npm start` will watch the `app` directory for any changes using `nodemon`
+```json
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+```
 
----
-
-**Don't 4get to ~~drink your Ovaltime~~ update `"name"`, `"description"`, `"author"`, etc. in 'package.json' when using this for your stuff.**
-
-## 🎶
-
-- For fonts, I set ['Victor Mono'](https://rubjo.github.io/victor-mono/) by default. You might also install: ['Inconsolata'](https://fonts.google.com/specimen/Inconsolata) or ['Source Code Pro'](https://fonts.google.com/specimen/Source+Code+Pro) - or completely change that in [.vscode/settings.json](/.vscode/settings.json), _if you know what you are doing! ⚠️_
-- As you get more comfortable, of course you can modify all the things as you C fit.
+Then, run **two terminals** (make sure you are in the correct directory). One of these is: `npm start` which will use `nodemon` to just keep your files 🏃🏾‍♂️. In a separate terminal you will run `npm test` to run `jest` (and maybe do some `commit`s).
