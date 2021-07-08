@@ -1,6 +1,5 @@
 // Note 🎵: We would normally just throw a bunch of unrelated fxns
 // into a single file. This is just for the sake of practice.
-import axios from "axios";
 
 // Calc
 export const add = (a, b) => a + b;
@@ -45,12 +44,3 @@ export class SalariedEmployee extends Employee {
     return this.salary / 52;
   }
 }
-
-// Axios - A Promise based HTTP client for the browser and node.js
-// (http://axios.github.io/)
-export const getUsers = async () => {
-  const { data } = await axios.get(
-    "https://jsonplaceholder.typicode.com/users"
-  );
-  return data;
-};
