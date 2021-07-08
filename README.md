@@ -10,16 +10,10 @@ If you want, you could install _Jest Snippets_ from [here](https://marketplace.v
 
 You will also want to make sure that _ESLint_ and _Prettier_ are enabled in the bottom right.
 
-Aside from that, `npm i`. You also need to: `npm install --save-dev jest`.
-
-You should also update `package.json` with your `"author"` info etc. and **add**:
-
-```json
-{
-  "scripts": {
-    "test": "jest"
-  }
-}
-```
+Aside from that, `npm i`.
 
 Then, run **two terminals** (make sure you are in the correct directory). One of these is: `npm start` which will use `nodemon` to just keep your files 🏃🏾‍♂️. In a separate terminal you will run `npm test` to run `jest` (and maybe do some `commit`s).
+
+Oh, your code goes in `app`. You and create an `index.test.js` (or similar pattern). That's probably the simplest for practicing.
+
+Also, this project uses ESModules (not CommonJS). Use `import` and `export` instead of `module.exports` and `require`.
